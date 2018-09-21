@@ -1,0 +1,3 @@
+/* pages/user/index.wxss */
+.user{width: 100%;height:400rpx}
+.userbg{background-image: linear-gradient(0deg, rgb(87, 247, 236) 0%, rgb(26, 188, 156) 100%);}

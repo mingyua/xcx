@@ -1,0 +1,23 @@
+<view class="shop">
+  <view class="shop_list" wx:key=""  wx:for="{{array}}" wx:for-item="item">
+    <view class="section">
+      <view class="img">
+        <image style="width: 90%; height: 164rpx; background-color: #eeeeee;" mode="{{mode}}" src="{{item.src}}"></image>
+      </view>      
+      <view class="desc">
+        <view class='section_title'><navigator url="../user/index"  open-type='switchTab'  hover-class="other-navigator-hover">在当前页打开</navigator></view>
+        <view class='section_p  mt-10'>{{item.text}}</view>
+        <view class='section_p mt-10'>
+            <van-tag type="danger" plain="true" class="mr-5">{{item.tags}}</van-tag>
+            <van-tag type="danger" plain="true" class="mr-5">{{item.tags}}</van-tag>
+            <van-tag type="danger" plain="true" class="mr-5">{{item.tags}}</van-tag>
+        </view>
+      </view>
+      <view class='contact'>  
+        <van-icon name="phone" class='c-orange' />
+        <view class='date'>09-23</view>
+      </view>
+
+    </view>
+  </view>
+</view>

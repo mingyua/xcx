@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-button": "/dist/button/index",
+    "van-icon": "/dist/icon/index",
+    "van-tag": "/dist/tag/index",
+    "van-panel": "/dist/panel/index",
+    "van-cell": "/dist/cell/index",
+    "van-cell-group": "/dist/cell-group/index",
+    "van-tab": "/dist/tab/index",
+    "van-tabs": "/dist/tabs/index"
+  }
+}

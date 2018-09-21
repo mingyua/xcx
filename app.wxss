@@ -1,0 +1,155 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0rpx 0;
+  box-sizing: border-box;
+  background: #efefef;
+  font-size: 12px;
+}
+.my-btn{display: inline-block;border-radius: 4px;cursor: pointer;
+	-webkit-appearance: none;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	box-sizing: border-box;
+  padding:0 80rpx;
+  }
+  .my-btn-hove{opacity: .8;
+	filter: alpha(opacity=80);
+  border-radius: 4px;
+	color: #fff}
+.section{background: #fff;padding: 30rpx 10rpx;box-sizing: border-box;}
+
+.section textarea{border: 1px solid #ccc;width:auto;padding:20rpx;height:auto;overflow: hidden;min-height:16px;}
+
+.section .sendbtn{display: flex;margin: 10px 20px 0 0;}
+.section .sendbtn text:nth-child(1) {
+  flex: 1;
+}
+/* .my-btn:hover{	opacity: .8;
+	filter: alpha(opacity=80);
+  border-radius: 4px;
+	color: #fff}
+.my-btn:active {
+	opacity: 1;
+	filter: alpha(opacity=100)
+} */
+.my-btn-success{background: #4ce68c;color:#FFF}
+.my-btn-success:hover{background: #4ce68c;color:#FFF}
+
+.my-btn-large{font-size: 16px}
+.my-btn-small{font-size: 14px}
+.my-btn-mini{font-size: 12px}
+
+.my-btn-radius{border-radius:200rpx }
+
+
+.mb-5{margin-bottom: 5px}.mb-10{margin-bottom: 10px}
+.mt-5{margin-top: 5px;}.mt-10{margin-top: 10px;}.mt-15{margin-top: 15px;}.mt-20{margin-top: 20px;}.mt-25{margin-top: 25px;}
+.ml-5{margin-left: 5px}.ml-10{margin-left: 10px}.ml-15{margin-left: 15px}.ml-20{margin-left: 20px}.ml-25{margin-left: 25px}
+
+.bd-b{border-bottom: 2px solid #0cdceb}
+
+.bd-clicle{border-radius: 100%}
+.pull-right{float: right}
+
+.boxshadow{box-shadow: 0 2px 4px #ccc}
+
+.c-white{color: #FFF}
+.c-999{color:#999}
+.c-666{color:#666}
+.c-333{color:#333}
+.c-main{color:#999}
+
+.mpanel{display: block; padding: 20rpx;background: rgb(255, 255, 255);margin-bottom: 20rpx}
+.mpanel .h2{font-size: 18px;padding: 10rpx 0 30rpx 0;}
+
+.mpanel .mheader{padding: 10rpx 0;line-height: 40rpx;position: relative}
+.mpanel .mheader .text{display: inline-block;padding-left:10rpx;vertical-align: middle;font-size: 12px;color:rgb(32, 31, 31);margin-top: -5rpx;font-weight: 100}
+.mpanel .mheader .avatar{display: inline-block;vertical-align: middle}
+.mpanel .mheader .avatar .img{width: 50rpx;height:50rpx;border-radius: 50%}
+.mpanel .title{display: block;font-size: 16px;padding: 10rpx 0 20rpx 0}
+.mpanel .mbody{font-size: 14px;}
+.mpanel .mfooter{padding: 10rpx 0 20rpx 0;margin-top: 20rpx;color:#7e7e7e}
+.mpanel .mfooter .left{display: inline-block;}
+.mpanel .mfooter .right{display: inline-block;float: right;margin-right: 10rpx;vertical-align: middle}
+.mpanel .mfooter .right .span{display: inline-block;margin-left: 40rpx;vertical-align: middle;}
+.iconsize{position: relative;top:5rpx;padding-right: 10rpx}
+.pospublish{position: fixed;bottom: 200rpx;right:40rpx;width: 80rpx;height:80rpx;line-height: 80rpx; text-align:center;background: #FFF;vertical-align: middle;z-index: 9999;padding: 2px 0 0 0}
+
+.btn-radius{border-radius: 80px;}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 420017 */
+  src: url('http://at.alicdn.com/t/font_420017_cl46qtk0ywh.eot');
+  src: url('//at.alicdn.com/t/font_420017_cl46qtk0ywh.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_420017_cl46qtk0ywh.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_420017_cl46qtk0ywh.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_420017_cl46qtk0ywh.svg#iconfont') format('svg');
+} 
+
+/* 
+<view class='box'>
+  <view class='item'>
+    <view class='item-top'>
+      <image class='img' mode="scaleToFill" src="../images/test.jpg"></image>
+      <text>mingyu</text>
+    </view>
+
+    <view class='item-content'>
+      <view><text>title</text></view>
+      <view>这是内容 </view>
+    </view>
+    
+    <view class='item-info'>
+      <view>5天前</view>
+      <view>
+      
+        <van-icon class='iconsize' name="like-o" bindtap="zan" size='14px' />55
+      </view>
+      <view>
+        <van-icon class='iconsize' name="like-o" bindtap="zan" size='14px' />55
+      </view>
+    </view>
+
+  </view>
+</view> */
+.box {
+  height:400rpx;
+}
+
+.item {
+  padding:20rpx;
+  background-color:#fff;
+}
+.item view  {
+  margin-bottom: 20rpx;
+}
+
+.item .item-top {
+  display:flex;
+  
+}
+.item view:last-child {
+  margin-bottom:0;
+}
+.item .item-info {
+  display: flex;
+}
+.item .item-info view:nth-child(1) {
+  flex: 1;
+}
+
+.item .img {
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin-right:20rpx;
+}
+
+
+.hidden {
+  display: none;
+}

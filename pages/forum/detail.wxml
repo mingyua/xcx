@@ -1,0 +1,54 @@
+<!--pages/forum/detail.wxml-->
+<view class='container'>
+  <scroll-view scroll-y scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class='mpanel bd-b'>
+      <view class='mheader'>
+        <view class='avatar'><image class='img'   mode="scaleToFill" src="../images/test.jpg"></image></view>
+        <view class='text'>mingyu</view>  
+        <view class='text'>5</view>  
+        <view class='text'><van-tag type="" plain >标签</van-tag></view>  
+        <view class='text pull-right'> <van-icon class='iconsize' name="like-o" bindtap="zan" size='14px' />55</view>       
+      </view>     
+      <view class='mbody' id="22"  bindtap='toggleBtn'>
+      <view class='title'>5645465</view>
+          我是内容
+      </view>
+      <view class='section {{uhide==22?"":"hidden"}}' id="scoll22" >
+        <textarea  auto-height placeholder="自动变高"   />
+        <view class='sendbtn'>
+          <text class='c-999'>100</text>
+          <text class='ml-20 c-999'>取消</text>
+          <text class='ml-20  c-999'>发送</text>
+        </view>
+      </view>
+  </view>
+  <view  wx:key=""  wx:for="{{commentdata}}" wx:for-item="item">
+  <view class='mpanel'>
+      <view class='mheader'>
+        <view class='avatar'><image class='img'   mode="scaleToFill" src="{{item.avatar}}"></image></view>
+        <view class='text'>{{item.username}}</view>  
+        <view class='text'>{{item.time}}</view>  
+        <view class='text'><van-tag type="" plain >标签</van-tag></view>  
+        <view class='text pull-right'> <van-icon class='iconsize' name="like-o" bindtap="zan" size='14px' />{{item.zan}}</view>       
+      </view>     
+      <view class='mbody' id="{{item.id}}"  bindtap='toggleBtn'>
+      <view class='title'>{{item.title}}</view>
+          {{item.content}}
+      </view>
+      <view class='section {{uhide==item.id?"":"hidden"}}'  id="scoll{{item.id}}"  >
+        <textarea  auto-height placeholder="自动变高"   />
+        <view class='sendbtn'>
+          <text class='c-999'>100</text>
+          <text class='ml-20 c-999'>取消</text>
+          <text class='ml-20  c-999'>发送</text>
+        </view>
+      </view>
+  </view>
+  </view>
+
+  <view class='pospublish bd-clicle boxshadow' id="22"  bindtap='toggleBtn' >
+    <van-icon name="edit-data" size="38px"   color='#15B286' />
+  </view>
+  </scroll-view>
+
+</view>

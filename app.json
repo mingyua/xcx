@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs", 
+    "pages/shop/index",
+    "pages/forum/index",
+    "pages/user/index",
+    "pages/forum/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1ABC9C",
+    "navigationBarTitleText": "军机处",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/home.png"
+      },
+      {
+        "pagePath": "pages/shop/index",
+        "text": "供求",
+        "iconPath": "pages/images/search.png"
+      },
+      {
+        "pagePath": "pages/forum/index",
+        "text": "社区",
+        "iconPath": "pages/images/area.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "pages/images/user.png"
+      }  ]
+  }
+}
